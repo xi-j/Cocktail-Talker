@@ -1,7 +1,7 @@
 # Cocktail-DialogGen
 
 **An LLM + TTS pipeline that simulates realistic, noisy, multi-speaker conversations** for
-training and evaluating [Cocktail-Talker](../Cocktail-Talker). Given an acoustic environment,
+training and evaluating Cocktail-Talker. Given an acoustic environment,
 it composes multi-party dialogs (with per-turn agent actions), synthesizes each speaker's
 speech, and mixes everything into noisy audio at several SNR levels.
 
@@ -41,7 +41,7 @@ python run.py --environment-audio cafeteria.wav --n-speakers 3 \
 
 1. **Describe** — if `noise_description` is None, Gemini captions `environment_audio` in one sentence.
 2. **Compose** (`compose.py`) — Gemini composes `n_dialogs` conversations for that environment and
-   config. Each turn is labelled with one of three agent actions: **`<RESPOND>` / `<LISTEN>` / `<IGNORE>`**
+   config. Each turn is labeled with one of three agent actions: **`<RESPOND>` / `<LISTEN>` / `<IGNORE>`**
    (the prompt still requires at least one addressee *switch*, which is expressed as a `<RESPOND>`).
 3. **Synthesize** (`synthesize.py`) — Qwen3-TTS renders every utterance, keeping each speaker's
    voice consistent:
@@ -69,7 +69,7 @@ python run.py --environment-audio cafeteria.wav --n-speakers 3 \
 ```
 
 The `noisy_dialog_turn_<i>.wav` clips are exactly the input format consumed by
-[Cocktail-Talker](../Cocktail-Talker); see `examples/` for 10 such ready-made samples.
+Cocktail-Talker; see `examples/` for 10 such ready-made samples.
 
 ## Predefined environments
 
