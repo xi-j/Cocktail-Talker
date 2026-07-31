@@ -1,7 +1,3 @@
-# Large bundled audio — host as a separate data bundle (HF), not in git.
-# Keep backgrounds/manifest.json and backgrounds/README.md tracked.
-backgrounds/**/*.wav
-
 # Generated runs and outputs
 runs/
 outputs/
