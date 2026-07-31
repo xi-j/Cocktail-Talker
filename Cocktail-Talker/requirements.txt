@@ -1,0 +1,36 @@
+# Cocktail-Talker inference requirements (Python 3.12, CUDA 12.4, tested on NVIDIA A40/L40).
+#
+# Install order matters slightly: install torch first (from the cu124 index), then the rest.
+#   pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements.txt
+#
+# Qwen2.5-Omni support is pinned to the exact upstream transformers commit it was
+# developed/tested against (predates the stable release that includes it).
+
+torch==2.6.0
+torchvision==0.21.0
+torchaudio==2.6.0
+
+transformers @ git+https://github.com/huggingface/transformers@cb39f7dd5ba874ee1859b47283b08cd3a6ab5a0d
+accelerate==1.12.0
+peft==0.19.1
+qwen-omni-utils==0.0.9
+
+soundfile==0.13.1
+librosa==0.11.0
+# The compiled scientific stack is capped to the last releases that still ship broad
+# manylinux2014 (glibc 2.17) wheels, so the env installs from wheels on both legacy and
+# modern Linux without a compiler. Newer versions also work on modern systems.
+numpy==2.2.6
+scipy==1.13.1
+scikit-learn==1.6.1
+numba==0.61.2
+llvmlite==0.44.0
+safetensors==0.7.0
+tokenizers==0.21.4
+av==14.2.0
+einops==0.8.2
+
+# For running the notebook version
+jupyter
+ipython

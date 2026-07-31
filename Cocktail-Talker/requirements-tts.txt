@@ -1,0 +1,16 @@
+# Qwen3-TTS speech-synthesis stage (synthesize_tts.py) — SEPARATE env from inference.py.
+# Qwen3-TTS needs a newer transformers than the Qwen2.5-Omni inference stage.
+#
+#   pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements-tts.txt
+
+torch==2.6.0
+torchaudio==2.6.0
+
+qwen-tts==0.1.1
+transformers==4.57.3
+accelerate==1.12.0
+soundfile==0.13.1
+librosa==0.11.0
+numpy==2.3.5
+einops==0.8.2

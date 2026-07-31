@@ -1,0 +1,13 @@
+# Large model weights — host on the Hugging Face Hub, not in git.
+adapters/*/adapter_model.safetensors
+
+# Inference outputs
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# core dumps (Omni model can segfault on teardown)
+core.*
