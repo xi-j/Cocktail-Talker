@@ -1,0 +1,15 @@
+{
+  "id": "05_ZOO_assisting_4spk_listen",
+  "split": "test_unseen",
+  "environment": "ZOO",
+  "mode": "ASSISTING",
+  "n_speakers": 4,
+  "snr": "6.90dB",
+  "scene": "Guiding-a-private-VIP-tour-near-the-big-cats-Chloe-Richard-Eleanor-James-9682e10f",
+  "turn_index": 2,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Chloe', 'role': 'Senior Tour Guide'}, 'speaker_b': {'gender': 'male', 'name': 'Richard', 'role': 'VIP Guest'}, 'speaker_c': {'gender': 'female', 'name': 'Eleanor', 'role': 'Spouse of VIP'}, 'speaker_d': {'gender': 'male', 'name': 'James', 'role': 'Personal Assistant'}}, 'mode': 'ASSISTING'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|listen|>",
+  "oracle_text": ""
+}

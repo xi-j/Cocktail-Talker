@@ -1,0 +1,15 @@
+{
+  "id": "04_BAR_assisting_3spk_respond",
+  "split": "test_unseen",
+  "environment": "BAR",
+  "mode": "ASSISTING",
+  "n_speakers": 3,
+  "snr": "3.16dB",
+  "scene": "Discussing-sommelier-recommendations-and-wine-list-updates-Isabella-Patricia-Arthur-1a26b5cc",
+  "turn_index": 4,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Isabella', 'role': 'Wine Director'}, 'speaker_b': {'gender': 'female', 'name': 'Patricia', 'role': 'Regular Patron'}, 'speaker_c': {'gender': 'male', 'name': 'Arthur', 'role': \"Patron's Husband\"}}, 'mode': 'ASSISTING'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|respond|>",
+  "oracle_text": "We do feature a robust Cabernet Sauvignon by the glass, known for its deep structure and dark berry flavors."
+}

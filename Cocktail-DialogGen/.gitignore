@@ -1,0 +1,15 @@
+# Large bundled audio — host as a separate data bundle (HF), not in git.
+# Keep backgrounds/manifest.json and backgrounds/README.md tracked.
+backgrounds/**/*.wav
+
+# Generated runs and outputs
+runs/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# core dumps
+core.*

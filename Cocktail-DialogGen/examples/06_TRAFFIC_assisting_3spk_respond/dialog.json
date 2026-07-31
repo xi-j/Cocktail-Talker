@@ -1,0 +1,108 @@
+{
+  "setting": {
+    "environment": "TRAFFIC: a busy traffic intersection",
+    "activity": "Managing traffic flow and assisting lost individuals",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Sarah",
+        "role": "Traffic Police Officer",
+        "style": "Authoritative but polite, speaks clearly over noise"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Tom",
+        "role": "Delivery Courier",
+        "style": "Rushed and slightly stressed, fast-paced"
+      },
+      "speaker_c": {
+        "gender": "female",
+        "name": "Elena",
+        "role": "Pedestrian with heavy bags",
+        "style": "Tired and hesitant, speaks softly"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Excuse me, officer! I'm trying to find the loading dock for the main commercial building. They blocked off the usual street.",
+      "agent_text": "Yes, that road is temporarily closed for utility work. You will need to take the next available right turn, then circle around the block to access the rear alleyway.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 0.5,
+      "input_end_sec": 8.34
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 4.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 19.02,
+      "input_start_sec": 23.02,
+      "input_end_sec": 23.02
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.8,
+      "input_text": "Right turn, then circle the block. Got it. Is the alley entrance clearly marked?",
+      "agent_text": "It has standard delivery signage, but the entrance is quite narrow. Just watch out for pedestrians crossing the mouth of the alley.",
+      "turn_start_sec": 23.02,
+      "input_start_sec": 23.82,
+      "input_end_sec": 29.98
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 2.5,
+      "input_text": "Pardon me, could I get some help crossing? These bags are terribly heavy and the cars keep turning on the walk signal.",
+      "agent_text": "Certainly. I can assist you across safely. Please stand behind the white line until I halt the turning traffic.",
+      "turn_start_sec": 37.78,
+      "input_start_sec": 40.28,
+      "input_end_sec": 47.32
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Hey, do you want me to put one of those bags on my cart? I'm heading in the same general direction.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 54.08,
+      "input_start_sec": 54.58,
+      "input_end_sec": 61.86
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.8,
+      "input_text": "Oh, that would be wonderful. My arms are completely numb.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 61.86,
+      "input_start_sec": 62.66,
+      "input_end_sec": 66.82
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.2,
+      "input_text": "Officer, if we're crossing together, should we wait for your signal now?",
+      "agent_text": "Yes, please wait right there. Once the light changes, I will step out and blow my whistle to ensure the intersection is clear for both of you.",
+      "turn_start_sec": 66.82,
+      "input_start_sec": 68.02,
+      "input_end_sec": 73.46
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.5,
+      "input_text": "Thank you so much. Traffic is completely overwhelming today.",
+      "agent_text": "It is definitely congested right now. Just keep an eye on my hand signals and we will get you across.",
+      "turn_start_sec": 81.74,
+      "input_start_sec": 83.24,
+      "input_end_sec": 86.44
+    }
+  ]
+}

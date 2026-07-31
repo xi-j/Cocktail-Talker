@@ -1,0 +1,98 @@
+{
+  "setting": {
+    "environment": "SQUARE: a public town square",
+    "activity": "Setting up a mayoral press conference",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Vanessa",
+        "role": "Mayor's Liaison",
+        "style": "formal, discreet, organized"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Arthur",
+        "role": "News Reporter",
+        "style": "probing, impatient, sharp"
+      },
+      "speaker_c": {
+        "gender": "female",
+        "name": "Diana",
+        "role": "Camera Operator",
+        "style": "observant, practical, quiet"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.0,
+      "input_text": "Will the mayor be taking any questions from the press after the main statement?",
+      "agent_text": "Yes, there will be a brief period for questions immediately following the statement.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 1.0,
+      "input_end_sec": 5.24
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "The glare from the glass building behind the podium is ruining the shot. We need to frame this differently.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 9.84,
+      "input_start_sec": 10.34,
+      "input_end_sec": 17.3
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Just zoom in closer. We don't have time to reposition the whole crew.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 17.3,
+      "input_start_sec": 17.8,
+      "input_end_sec": 22.6
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 2.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.6,
+      "input_start_sec": 24.6,
+      "input_end_sec": 24.6
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "Actually, could we just shift the podium a little bit to the left to avoid the reflection?",
+      "agent_text": "I can authorize a slight adjustment to the podium placement. Let us move it carefully so we do not disconnect the microphones.",
+      "turn_start_sec": 24.6,
+      "input_start_sec": 25.6,
+      "input_end_sec": 30.72
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "Thank you, that fixes the problem completely.",
+      "agent_text": "I am glad to help. Ensuring a clear broadcast is beneficial for everyone.",
+      "turn_start_sec": 37.88,
+      "input_start_sec": 38.38,
+      "input_end_sec": 41.58
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Well, as long as I can still step up to the mic for my question, I don't mind.",
+      "agent_text": "You will have plenty of space to approach the microphone during the designated time.",
+      "turn_start_sec": 46.98,
+      "input_start_sec": 47.48,
+      "input_end_sec": 52.44
+    }
+  ]
+}

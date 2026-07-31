@@ -1,0 +1,114 @@
+{
+  "setting": {
+    "environment": "CAR: a private passenger vehicle",
+    "activity": "Driving to a local comic convention",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Gwen",
+        "role": "Cosplayer fixing costume en route",
+        "style": "Distracted, talking through pins in mouth, crafty"
+      },
+      "speaker_b": {
+        "gender": "female",
+        "name": "Harper",
+        "role": "Driver",
+        "style": "Patient but strictly focused on traffic"
+      },
+      "speaker_c": {
+        "gender": "male",
+        "name": "Eli",
+        "role": "Schedule Checker",
+        "style": "Hyper-organized and time-obsessed"
+      },
+      "speaker_d": {
+        "gender": "male",
+        "name": "Noah",
+        "role": "Merch Buyer",
+        "style": "Excited and restless"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "Okay, the panel for the new animated show starts exactly an hour after doors open. We have to rush to the main hall immediately.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 1.0,
+      "input_end_sec": 10.2
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.5,
+      "input_text": "Are you kidding? I need to hit the vendor floor first before all the exclusive variant covers sell out.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 10.2,
+      "input_start_sec": 10.7,
+      "input_end_sec": 16.3
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "We can split up. I'm not missing that panel. The voice actors are doing a live reading.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 16.3,
+      "input_start_sec": 16.8,
+      "input_end_sec": 22.72
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 4.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.72,
+      "input_start_sec": 26.72,
+      "input_end_sec": 26.72
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.5,
+      "input_text": "Hey, watch the hot glue gun in the passenger seat! I just felt something warm near the center console.",
+      "agent_text": "Oh, shoot, sorry! I'm just trying to reattach this foam armor piece before we arrive. The glue dripped.",
+      "turn_start_sec": 26.72,
+      "input_start_sec": 28.22,
+      "input_end_sec": 34.38
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Just don't glue it to my upholstery, please. This car is leased.",
+      "agent_text": "I promise I'm being careful! I have a piece of cardboard underneath it.",
+      "turn_start_sec": 40.9,
+      "input_start_sec": 41.4,
+      "input_end_sec": 46.6
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "Will your costume even be dry enough to wear by the time we get to the security line?",
+      "agent_text": "It dries super fast. As long as I hold it still for the next ten minutes, it'll be solid.",
+      "turn_start_sec": 50.88,
+      "input_start_sec": 51.88,
+      "input_end_sec": 56.92
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "Alright, but we are not waiting in the lobby for you to fix it if it snaps again.",
+      "agent_text": "It won't snap! Have a little faith in my craftsmanship.",
+      "turn_start_sec": 62.4,
+      "input_start_sec": 62.9,
+      "input_end_sec": 67.86
+    }
+  ]
+}

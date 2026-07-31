@@ -1,0 +1,108 @@
+{
+  "setting": {
+    "environment": "LIBRARY: inside a library with people reading or working",
+    "activity": "Setting up the community room",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Valerie",
+        "role": "Facilities Coordinator",
+        "style": "pragmatic and observant, speaks efficiently"
+      },
+      "speaker_b": {
+        "gender": "female",
+        "name": "Grace",
+        "role": "Event Organizer",
+        "style": "detail-oriented and anxious, speaks quickly"
+      },
+      "speaker_c": {
+        "gender": "male",
+        "name": "Carlos",
+        "role": "Catering Vendor",
+        "style": "accommodating and practical, speaks amiably"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Hi, we're here to set up for the author's book launch in the community room. The tables aren't arranged the way we discussed in our emails.",
+      "agent_text": "I apologize for the confusion. The morning group moved the furniture around. I have a copy of your desired floor plan right here, and I can grab a colleague to help us shift the tables into the correct configuration immediately.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 0.5,
+      "input_end_sec": 8.82
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "While you sort out the seating, where do you want me to put the refreshment station? I have the urns of coffee and the pastry trays ready.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.3,
+      "input_start_sec": 23.3,
+      "input_end_sec": 30.1
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Let's put the food near the back entrance so it doesn't distract people while the author is speaking. Just make sure the power cords aren't a tripping hazard.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 30.1,
+      "input_start_sec": 30.6,
+      "input_end_sec": 39.88
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.5,
+      "input_text": "Is there a dedicated floor outlet near the back wall I can plug the coffee urns into?",
+      "agent_text": "Yes, there are recessed power outlets underneath the brass covers scattered across the back floor area. I can show you exactly where they are and provide some tape to secure the cords flat against the carpet.",
+      "turn_start_sec": 39.88,
+      "input_start_sec": 41.38,
+      "input_end_sec": 46.26
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 3.5,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 57.98,
+      "input_start_sec": 61.48,
+      "input_end_sec": 61.48
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.0,
+      "input_text": "Thank you, that would be very helpful. What about the microphone for the podium? The author is very soft-spoken.",
+      "agent_text": "The public address system is already active. The wireless microphone is resting inside the podium drawer. You can simply power it on, and the levels are pre-set for clear speech without feedback.",
+      "turn_start_sec": 61.48,
+      "input_start_sec": 62.48,
+      "input_end_sec": 70.24
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "I'll get the urns plugged in now. Let me know when you want me to uncover the pastries.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 81.56,
+      "input_start_sec": 82.06,
+      "input_end_sec": 86.62
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.0,
+      "input_text": "Wait until the doors officially open. Oh, and where should attendees discard their empty cups?",
+      "agent_text": "I will bring out the larger recycling and waste receptacles and place them discreetly near the exit doors before your guests arrive.",
+      "turn_start_sec": 86.62,
+      "input_start_sec": 87.62,
+      "input_end_sec": 94.42
+    }
+  ]
+}

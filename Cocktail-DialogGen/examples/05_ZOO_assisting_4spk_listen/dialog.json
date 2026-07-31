@@ -1,0 +1,134 @@
+{
+  "setting": {
+    "environment": "ZOO: inside a zoo with animals and visitors around",
+    "activity": "Guiding a private VIP tour near the big cats",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Chloe",
+        "role": "Senior Tour Guide",
+        "style": "enthusiastic and polished, speaks cheerfully"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Richard",
+        "role": "VIP Guest",
+        "style": "curious and demanding, speaks confidently"
+      },
+      "speaker_c": {
+        "gender": "female",
+        "name": "Eleanor",
+        "role": "Spouse of VIP",
+        "style": "observant and relaxed, speaks softly"
+      },
+      "speaker_d": {
+        "gender": "male",
+        "name": "James",
+        "role": "Personal Assistant",
+        "style": "attentive and organized, speaks crisply"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "This tiger enclosure is magnificent. Can we get closer to the glass?",
+      "agent_text": "Absolutely! If you follow me just down this ramp, we have a private viewing area reserved for your tour. The visibility is fantastic there.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 0.5,
+      "input_end_sec": 4.82
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "Oh, look at the size of those paws. It's truly breathtaking.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 13.5,
+      "input_start_sec": 14.5,
+      "input_end_sec": 18.02
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Incredible. Make sure you get a photo of this for the family group chat.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 18.02,
+      "input_start_sec": 18.52,
+      "input_end_sec": 22.28
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.3,
+      "input_text": "I already have the camera ready. Just lean in a bit closer to the glass.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.28,
+      "input_start_sec": 22.58,
+      "input_end_sec": 27.54
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 3.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 27.54,
+      "input_start_sec": 30.54,
+      "input_end_sec": 30.54
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "Do they always sleep this much during the day? They seem quite lazy.",
+      "agent_text": "They actually are! Big cats conserve a lot of energy and usually spend a large portion of their day resting. They become much more active toward dusk.",
+      "turn_start_sec": 30.54,
+      "input_start_sec": 31.04,
+      "input_end_sec": 34.56
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.8,
+      "input_text": "Excuse me, we have a tight schedule. How long does the walk to the private dining pavilion take from here?",
+      "agent_text": "It is a very short stroll. We can head in that direction whenever you are ready, and our culinary team will be prepared for your arrival.",
+      "turn_start_sec": 44.2,
+      "input_start_sec": 45.0,
+      "input_end_sec": 52.04
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.2,
+      "input_text": "Let's give it another moment. I want to see if the big one gets up.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 59.84,
+      "input_start_sec": 61.04,
+      "input_end_sec": 64.08
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.5,
+      "input_text": "Understood. I will message the catering staff to hold the appetizers.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 64.08,
+      "input_start_sec": 64.58,
+      "input_end_sec": 69.54
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.5,
+      "input_text": "Alright, I've seen enough. Lead the way to lunch, please.",
+      "agent_text": "Right this way. We will pass by the botanical gardens on our route, which is lovely this time of year.",
+      "turn_start_sec": 69.54,
+      "input_start_sec": 71.04,
+      "input_end_sec": 74.32
+    }
+  ]
+}

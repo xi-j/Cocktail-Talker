@@ -1,0 +1,15 @@
+{
+  "id": "01_WASHING_assisting_4spk_respond",
+  "split": "test_seen",
+  "environment": "WASHING",
+  "mode": "ASSISTING",
+  "n_speakers": 4,
+  "snr": "2.45dB",
+  "scene": "Managing-linens-on-a-cruise-ship-Maria-Leo-Sophie-Chief Engineer-27814936",
+  "turn_index": 4,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Maria', 'role': 'Chief Laundry Officer'}, 'speaker_b': {'gender': 'male', 'name': 'Leo', 'role': 'Cabin Steward'}, 'speaker_c': {'gender': 'female', 'name': 'Sophie', 'role': 'Dining Room Waitress'}, 'speaker_d': {'gender': 'male', 'name': 'Chief Engineer', 'role': 'Ship Engineer'}}, 'mode': 'ASSISTING'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|respond|>",
+  "oracle_text": "Yes, that table is fine. Make sure they are separated from the cabin linens so they go straight to the flatwork ironer."
+}

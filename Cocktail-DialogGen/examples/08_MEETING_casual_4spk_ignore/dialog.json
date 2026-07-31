@@ -1,0 +1,114 @@
+{
+  "setting": {
+    "environment": "MEETING: a meeting room",
+    "activity": "Brainstorming a seasonal ad campaign",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Joan Holloway",
+        "role": "Media Buyer",
+        "style": "savvy and practical, speaks assertively"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Don Draper",
+        "role": "Campaign Manager",
+        "style": "visionary and confident, speaks smoothly"
+      },
+      "speaker_c": {
+        "gender": "female",
+        "name": "Peggy Olson",
+        "role": "Copywriter",
+        "style": "creative and thoughtful, earnest tone"
+      },
+      "speaker_d": {
+        "gender": "male",
+        "name": "Stan Rizzo",
+        "role": "Art Director",
+        "style": "relaxed and visual, casual pacing"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.0,
+      "input_text": "We need to dominate the holiday season this year. Are we looking at mostly digital placements, or doing some traditional outdoor?",
+      "agent_text": "A mix is best. Billboards in high-traffic shopping districts are expensive right now, but they guarantee eyes when people are already out spending.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 1.0,
+      "input_end_sec": 10.04
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.6,
+      "input_text": "If we do billboards, the imagery needs to be bold. People are driving by fast.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 18.0,
+      "input_start_sec": 18.6,
+      "input_end_sec": 24.2
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.8,
+      "input_text": "And the copy has to be extremely short. Maybe just three words max.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 24.2,
+      "input_start_sec": 25.0,
+      "input_end_sec": 28.28
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Agreed. Less is more for outdoor spaces.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 28.28,
+      "input_start_sec": 28.78,
+      "input_end_sec": 32.38
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 4.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 32.38,
+      "input_start_sec": 36.38,
+      "input_end_sec": 36.38
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "If I write a longer script for streaming audio ads, is that something we have the budget to push heavily?",
+      "agent_text": "Audio is much cheaper than outdoor right now. If you write a compelling script, I can buy a lot of airtime on those popular holiday playlists.",
+      "turn_start_sec": 36.38,
+      "input_start_sec": 37.38,
+      "input_end_sec": 42.5
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.7,
+      "input_text": "What about banner ads? Do you need me to format the artwork into multiple aspect ratios?",
+      "agent_text": "Yes, please. I'll need everything from wide leaderboards to the small mobile squares for the retargeting network.",
+      "turn_start_sec": 51.02,
+      "input_start_sec": 51.72,
+      "input_end_sec": 57.64
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.5,
+      "input_text": "I'll create a template file so exporting all those sizes won't take forever.",
+      "agent_text": "That will save us a lot of back-and-forth. Let me know when you have the first batch ready.",
+      "turn_start_sec": 64.56,
+      "input_start_sec": 65.06,
+      "input_end_sec": 70.1
+    }
+  ]
+}

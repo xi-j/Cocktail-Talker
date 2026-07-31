@@ -1,0 +1,108 @@
+{
+  "setting": {
+    "environment": "AIRPORT: a bustling airport",
+    "activity": "buying travel pillows at a kiosk",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Gwen",
+        "role": "scuba instructor",
+        "style": "easygoing and adventurous, speaks warmly"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Carlos",
+        "role": "dive master trainee",
+        "style": "eager and curious, speaks quickly"
+      },
+      "speaker_c": {
+        "gender": "male",
+        "name": "Steve",
+        "role": "equipment specialist",
+        "style": "fussy and precise, speaks deliberately"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "These memory foam pillows are a rip-off. I should have brought mine from home.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 1.0,
+      "input_end_sec": 7.4
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "I've never used one. Do they actually help you sleep sitting up?",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 7.4,
+      "input_start_sec": 7.9,
+      "input_end_sec": 12.3
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.5,
+      "input_text": "Are you getting one for the trip to the reef?",
+      "agent_text": "Absolutely. It's a massive flight, and a sore neck makes wearing a wetsuit miserable.",
+      "turn_start_sec": 12.3,
+      "input_start_sec": 13.8,
+      "input_end_sec": 16.28
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 3.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.0,
+      "input_start_sec": 25.0,
+      "input_end_sec": 25.0
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "Did you make sure to pack your regulator in your carry-on like I advised?",
+      "agent_text": "Yes, of course. I never trust the airlines with my primary breathing gear.",
+      "turn_start_sec": 25.0,
+      "input_start_sec": 26.0,
+      "input_end_sec": 30.64
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "I checked mine... I really hope it doesn't get damaged.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 36.68,
+      "input_start_sec": 37.18,
+      "input_end_sec": 41.18
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.8,
+      "input_text": "We padded yours with the wetsuits. It should be fine.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 41.18,
+      "input_start_sec": 41.98,
+      "input_end_sec": 45.74
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 2.0,
+      "input_text": "Do you need me to pay for that pillow on the company card?",
+      "agent_text": "No, I've got it. I want to grab a bottle of water too before we board.",
+      "turn_start_sec": 45.74,
+      "input_start_sec": 47.74,
+      "input_end_sec": 51.5
+    }
+  ]
+}

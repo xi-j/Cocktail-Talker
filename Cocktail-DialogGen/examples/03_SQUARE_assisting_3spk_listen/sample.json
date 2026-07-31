@@ -1,0 +1,15 @@
+{
+  "id": "03_SQUARE_assisting_3spk_listen",
+  "split": "test_seen",
+  "environment": "SQUARE",
+  "mode": "ASSISTING",
+  "n_speakers": 3,
+  "snr": "5.78dB",
+  "scene": "Setting-up-a-mayoral-press-conference-Vanessa-Arthur-Diana-e83e736c",
+  "turn_index": 1,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Vanessa', 'role': \"Mayor's Liaison\"}, 'speaker_b': {'gender': 'male', 'name': 'Arthur', 'role': 'News Reporter'}, 'speaker_c': {'gender': 'female', 'name': 'Diana', 'role': 'Camera Operator'}}, 'mode': 'ASSISTING'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|listen|>",
+  "oracle_text": ""
+}

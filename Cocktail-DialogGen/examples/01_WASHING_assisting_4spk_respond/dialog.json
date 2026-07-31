@@ -1,0 +1,124 @@
+{
+  "setting": {
+    "environment": "WASHING: inside a laundry room",
+    "activity": "Managing linens on a cruise ship",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Maria",
+        "role": "Chief Laundry Officer",
+        "style": "authoritative, nautical, strict"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Leo",
+        "role": "Cabin Steward",
+        "style": "cheerful, fast-talking, eager"
+      },
+      "speaker_c": {
+        "gender": "female",
+        "name": "Sophie",
+        "role": "Dining Room Waitress",
+        "style": "exhausted, soft-spoken, polite"
+      },
+      "speaker_d": {
+        "gender": "male",
+        "name": "Chief Engineer",
+        "role": "Ship Engineer",
+        "style": "technical, serious, booming voice"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 3.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 3.0,
+      "input_end_sec": 3.0
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "I'm turning in the morning linens from deck seven. Heavy load today!",
+      "agent_text": "Place the bags in the sorting bins carefully. We are processing everything on an expedited schedule before port arrival.",
+      "turn_start_sec": 3.0,
+      "input_start_sec": 3.5,
+      "input_end_sec": 7.42
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.2,
+      "input_text": "I also brought the dirty napkins from the breakfast buffet. The carts are getting backed up in the galley.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 14.66,
+      "input_start_sec": 15.86,
+      "input_end_sec": 21.54
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.4,
+      "input_text": "Tell me about it. Guests are making a huge mess trying to pack up their bags early.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 21.54,
+      "input_start_sec": 21.94,
+      "input_end_sec": 26.74
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.5,
+      "input_text": "Can I leave these napkin bundles on this empty table?",
+      "agent_text": "Yes, that table is fine. Make sure they are separated from the cabin linens so they go straight to the flatwork ironer.",
+      "turn_start_sec": 26.74,
+      "input_start_sec": 27.24,
+      "input_end_sec": 30.12
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 2.5,
+      "input_text": "We're experiencing a minor drop in steam pressure from the main boiler.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 36.48,
+      "input_start_sec": 38.98,
+      "input_end_sec": 43.78
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.8,
+      "input_text": "Does that mean my next batch of towels will be delayed?",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 43.78,
+      "input_start_sec": 44.58,
+      "input_end_sec": 47.54
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.5,
+      "input_text": "Not significantly, but the machines might take a little longer to reach peak temperature.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 47.54,
+      "input_start_sec": 48.04,
+      "input_end_sec": 53.72
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.6,
+      "input_text": "Are the large extractors currently running, or can I divert some power?",
+      "agent_text": "The main extractors are finishing their cycle now. You can safely divert power in just a moment once they power down.",
+      "turn_start_sec": 53.72,
+      "input_start_sec": 54.32,
+      "input_end_sec": 59.36
+    }
+  ]
+}

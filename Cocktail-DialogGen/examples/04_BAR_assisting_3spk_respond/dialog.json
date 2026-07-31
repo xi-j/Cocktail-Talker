@@ -1,0 +1,108 @@
+{
+  "setting": {
+    "environment": "BAR: a lively bar with people chatting",
+    "activity": "Discussing sommelier recommendations and wine list updates",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Isabella",
+        "role": "Wine Director",
+        "style": "knowledgeable, elegant, soft-spoken"
+      },
+      "speaker_b": {
+        "gender": "female",
+        "name": "Patricia",
+        "role": "Regular Patron",
+        "style": "curious, conversational, relaxed"
+      },
+      "speaker_c": {
+        "gender": "male",
+        "name": "Arthur",
+        "role": "Patron's Husband",
+        "style": "skeptical, jovial, loud"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "I normally drink heavy reds, but I want something a bit lighter tonight. What do you suggest?",
+      "agent_text": "I highly recommend trying an elegant Pinot Noir; it offers wonderful red fruit notes without being overwhelmingly heavy.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 0.5,
+      "input_end_sec": 6.26
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.6,
+      "input_text": "You always say you want something lighter and then end up stealing my Cabernet.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 13.42,
+      "input_start_sec": 14.02,
+      "input_end_sec": 18.74
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.4,
+      "input_text": "Oh, hush. I'm expanding my horizons tonight.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 18.74,
+      "input_start_sec": 19.14,
+      "input_end_sec": 22.26
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 3.5,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.26,
+      "input_start_sec": 25.76,
+      "input_end_sec": 25.76
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 1.0,
+      "input_text": "Well, since she's getting that, do you have a truly bold Cabernet open by the glass?",
+      "agent_text": "We do feature a robust Cabernet Sauvignon by the glass, known for its deep structure and dark berry flavors.",
+      "turn_start_sec": 25.76,
+      "input_start_sec": 26.76,
+      "input_end_sec": 31.48
+    },
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.3,
+      "input_text": "Perfect, I'll take a glass of that. Sounds exactly like what I'm looking for.",
+      "agent_text": "An excellent choice. I will pour that for you straight away.",
+      "turn_start_sec": 37.92,
+      "input_start_sec": 38.22,
+      "input_end_sec": 43.18
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.9,
+      "input_text": "Wait, let's just get a cheese board to go with these, we skipped dinner.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 46.66,
+      "input_start_sec": 47.56,
+      "input_end_sec": 52.6
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Can you put an order in for the artisan cheese plate to accompany our wine?",
+      "agent_text": "Certainly, I will inform the kitchen to prepare the artisan selection, which pairs beautifully with both of your selections.",
+      "turn_start_sec": 52.6,
+      "input_start_sec": 53.1,
+      "input_end_sec": 57.02
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "09_AIRPORT_casual_3spk_listen",
+  "split": "test_unseen",
+  "environment": "AIRPORT",
+  "mode": "CASUAL",
+  "n_speakers": 3,
+  "snr": "2.15dB",
+  "scene": "buying-travel-pillows-at-a-kiosk-Gwen-Carlos-Steve-08fd9ec0",
+  "turn_index": 6,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Gwen', 'role': 'scuba instructor'}, 'speaker_b': {'gender': 'male', 'name': 'Carlos', 'role': 'dive master trainee'}, 'speaker_c': {'gender': 'male', 'name': 'Steve', 'role': 'equipment specialist'}}, 'mode': 'CASUAL'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|listen|>",
+  "oracle_text": ""
+}

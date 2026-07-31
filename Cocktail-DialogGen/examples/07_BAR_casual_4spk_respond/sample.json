@@ -1,0 +1,15 @@
+{
+  "id": "07_BAR_casual_4spk_respond",
+  "split": "test_unseen",
+  "environment": "BAR",
+  "mode": "CASUAL",
+  "n_speakers": 4,
+  "snr": "4.70dB",
+  "scene": "Planning-a-weekend-road-trip-Sam-Ben-Elena-Maria-e49320fe",
+  "turn_index": 4,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Sam', 'role': 'Road Trip Planner'}, 'speaker_b': {'gender': 'male', 'name': 'Ben', 'role': 'Car Owner / Driver'}, 'speaker_c': {'gender': 'female', 'name': 'Elena', 'role': 'Snack Coordinator'}, 'speaker_d': {'gender': 'female', 'name': 'Maria', 'role': 'Bar Waitress'}}, 'mode': 'CASUAL'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|respond|>",
+  "oracle_text": "We'll take the check, thanks. We have some packing to do tonight."
+}

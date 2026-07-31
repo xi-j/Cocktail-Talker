@@ -1,0 +1,104 @@
+{
+  "setting": {
+    "environment": "BAR: a lively bar with people chatting",
+    "activity": "Planning a weekend road trip",
+    "voice_profiles": {
+      "agent": {
+        "gender": "female",
+        "name": "Sam",
+        "role": "Road Trip Planner",
+        "style": "Enthusiastic and detail-oriented, speaks quickly"
+      },
+      "speaker_b": {
+        "gender": "male",
+        "name": "Ben",
+        "role": "Car Owner / Driver",
+        "style": "Cautious and practical, speaks slowly"
+      },
+      "speaker_c": {
+        "gender": "female",
+        "name": "Elena",
+        "role": "Snack Coordinator",
+        "style": "Chill and agreeable, speaks cheerfully"
+      },
+      "speaker_d": {
+        "gender": "female",
+        "name": "Maria",
+        "role": "Bar Waitress",
+        "style": "Busy and efficient, speaks clearly"
+      }
+    }
+  },
+  "dialog": [
+    {
+      "action": "<RESPOND>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 1.0,
+      "input_text": "I checked the tires and everything is good to go, but we really need to leave early to beat the traffic.",
+      "agent_text": "I've mapped out a scenic route that bypasses the main highway. It adds a little time, but the views are incredible.",
+      "turn_start_sec": 0.0,
+      "input_start_sec": 1.0,
+      "input_end_sec": 6.2
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 0.4,
+      "input_text": "As long as we have enough chips and gummy bears, I don't care which way we drive.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 13.12,
+      "input_start_sec": 13.52,
+      "input_end_sec": 17.68
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_b",
+      "pause_before_input": 0.5,
+      "input_text": "Just please don't spill crumbs in the backseat. I just vacuumed it.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 17.68,
+      "input_start_sec": 18.18,
+      "input_end_sec": 22.02
+    },
+    {
+      "action": "<IGNORE>",
+      "input_speaker": "noise",
+      "pause_before_input": 3.0,
+      "input_text": null,
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 22.02,
+      "input_start_sec": 25.02,
+      "input_end_sec": 25.02
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 1.5,
+      "input_text": "Sorry to interrupt, folks. Are we ready for the check, or do you want to look at the dessert menu?",
+      "agent_text": "We'll take the check, thanks. We have some packing to do tonight.",
+      "turn_start_sec": 25.02,
+      "input_start_sec": 26.52,
+      "input_end_sec": 31.4
+    },
+    {
+      "action": "<LISTEN>",
+      "input_speaker": "speaker_d",
+      "pause_before_input": 0.4,
+      "input_text": "Sure thing, I'll print that out and be right back.",
+      "agent_text": "<SILENCE>",
+      "turn_start_sec": 35.52,
+      "input_start_sec": 35.92,
+      "input_end_sec": 38.56
+    },
+    {
+      "action": "<SWITCH>",
+      "input_speaker": "speaker_c",
+      "pause_before_input": 2.0,
+      "input_text": "Did you decide where we're stopping for lunch on the way up?",
+      "agent_text": "There's a highly rated diner about halfway. Let's aim for that.",
+      "turn_start_sec": 38.56,
+      "input_start_sec": 40.56,
+      "input_end_sec": 43.36
+    }
+  ]
+}

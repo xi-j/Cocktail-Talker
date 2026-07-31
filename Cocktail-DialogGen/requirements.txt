@@ -1,0 +1,25 @@
+# Cocktail-DialogGen requirements (Python 3.12, CUDA 12.4). One env runs the whole
+# pipeline: Gemini (google-genai) for composition + Qwen3-TTS for synthesis.
+#
+#   pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements.txt
+
+torch==2.6.0
+torchaudio==2.6.0
+
+# Qwen3-TTS (Base / VoiceDesign) — needs a recent transformers
+qwen-tts==0.1.1
+transformers==4.57.3
+
+# Gemini dialog composer + environment captioning
+google-genai==1.56.0
+
+soundfile==0.13.1
+librosa==0.11.0
+# compiled sci-stack capped to last broad manylinux2014 (glibc 2.17) wheels for portability
+numpy==2.2.6
+scipy==1.13.1
+scikit-learn==1.6.1
+numba==0.61.2
+llvmlite==0.44.0
+einops==0.8.2

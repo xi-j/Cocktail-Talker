@@ -1,0 +1,15 @@
+{
+  "id": "06_TRAFFIC_assisting_3spk_respond",
+  "split": "test_seen",
+  "environment": "TRAFFIC",
+  "mode": "ASSISTING",
+  "n_speakers": 3,
+  "snr": "7.75dB",
+  "scene": "Managing-traffic-flow-and-assisting-lost-individuals-Sarah-Tom-Elena-885da4e2",
+  "turn_index": 3,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Sarah', 'role': 'Traffic Police Officer'}, 'speaker_b': {'gender': 'male', 'name': 'Tom', 'role': 'Delivery Courier'}, 'speaker_c': {'gender': 'female', 'name': 'Elena', 'role': 'Pedestrian with heavy bags'}}, 'mode': 'ASSISTING'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|respond|>",
+  "oracle_text": "Certainly. I can assist you across safely. Please stand behind the white line until I halt the turning traffic."
+}

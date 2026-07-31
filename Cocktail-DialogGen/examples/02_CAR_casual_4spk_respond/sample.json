@@ -1,0 +1,15 @@
+{
+  "id": "02_CAR_casual_4spk_respond",
+  "split": "test_seen",
+  "environment": "CAR",
+  "mode": "CASUAL",
+  "n_speakers": 4,
+  "snr": "1.26dB",
+  "scene": "Driving-to-a-local-comic-convention-Gwen-Harper-Eli-Noah-2d4e771f",
+  "turn_index": 6,
+  "input_audio": "input.wav",
+  "dialog_log": "dialog.json",
+  "metadata_prompt": "Speakers' Metadata: {'voice_profiles': {'agent': {'gender': 'female', 'name': 'Gwen', 'role': 'Cosplayer fixing costume en route'}, 'speaker_b': {'gender': 'female', 'name': 'Harper', 'role': 'Driver'}, 'speaker_c': {'gender': 'male', 'name': 'Eli', 'role': 'Schedule Checker'}, 'speaker_d': {'gender': 'male', 'name': 'Noah', 'role': 'Merch Buyer'}}, 'mode': 'CASUAL'}\n<audio>Generate the next response of the agent speaker.",
+  "oracle_action": "<|respond|>",
+  "oracle_text": "It dries super fast. As long as I hold it still for the next ten minutes, it'll be solid."
+}
